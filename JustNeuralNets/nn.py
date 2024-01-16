@@ -53,4 +53,11 @@ layer_output = np.dot(weights, input) + biases
 
 print(layer_output)
 
-        
+
+a = [1,2,3]
+b =[2,333,4]  
+
+a  = np.array([a]) #Conver it into a matrix since its alrady in the list format , we discount the [] bracket for list
+b  = np.array([b]).T #transposing to get the desired shape to perform the matrix product
+
+print("dot is " ,np.dot(a,b))
